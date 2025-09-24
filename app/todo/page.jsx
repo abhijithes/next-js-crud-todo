@@ -23,7 +23,7 @@ export default function pages() {
 
     return (
         <div className=" ">
-            <ul className="p-5">
+            <ul className="">
                 {!topics || topics.length === 0 ? <h2 className="text-2xl font-bold text-center">No Topics...</h2> : null}
                 {topics && topics?.map((topic) => (
                     <li className="flex justify-between mb-3 border-2 border-gray-300 rounded-lg shadow-lg " key={topic._id}>
