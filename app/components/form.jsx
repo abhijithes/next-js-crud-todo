@@ -12,7 +12,7 @@ export default function form({formtype,id}) {
     const addhandleSubmit=async(e)=>{
         e.preventDefault()
         try{
-        const res = await fetch('http://localhost:3000/api/topic',{
+        const res = await fetch('/api/topic',{
             method:'POST',
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({title,description})
@@ -29,7 +29,7 @@ export default function form({formtype,id}) {
     const edithandleSubmit=async(e)=>{
         e.preventDefault()
         try{
-        const res = await fetch('http://localhost:3000/api/topic',{
+        const res = await fetch('/api/topic',{
             method:'PUT',
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify({id,title,description})
