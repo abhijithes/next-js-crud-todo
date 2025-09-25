@@ -2,9 +2,7 @@ import mongoose from "mongoose";
 
 let isConnected = false; 
 export async function connectToDB() {
-    if (isConnected) {
-        console.log("DB is already connected");
-        
+    if (isConnected) {        
         return;
     }
     try {
